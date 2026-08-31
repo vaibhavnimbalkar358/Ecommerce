@@ -49,6 +49,6 @@ public class UserController {
 
         userService.deleteUser(id);
 
-        return "User deleted successfully  from vaibhav ";
+        return "User deleted successfully  from vaishu ";
     }
 }
