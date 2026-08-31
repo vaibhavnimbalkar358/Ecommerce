@@ -50,6 +50,6 @@ public class UserController {
 
         userService.deleteUser(id);
 
-        return "User deleted successfully";
+        return "User deleted successfully  from my side ";
     }
 }
