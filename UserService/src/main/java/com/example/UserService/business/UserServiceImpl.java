@@ -1,7 +1,7 @@
-package com.example.UserService.service;
+package com.example.UserService.business;
 
-import com.example.UserService.model.User;
-import com.example.UserService.repository.UserRepository;
+import com.example.UserService.integration.domain.User;
+import com.example.UserService.integration.repository.write.UserRepositorywriteRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,9 +9,9 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private final UserRepository userRepository;
+    private final UserRepositorywriteRepository userRepository;
 
-    public UserServiceImpl(UserRepository userRepository) {
+    public UserServiceImpl(UserRepositorywriteRepository userRepository) {
         this.userRepository = userRepository;
     }
 
