@@ -1,5 +1,6 @@
-package com.example.UserService.business;
+package com.example.UserService.business.serviceimpl;
 
+import com.example.UserService.business.service.UserService;
 import com.example.UserService.integration.domain.User;
 import com.example.UserService.integration.repository.write.UserRepositorywriteRepository;
 import org.springframework.stereotype.Service;
