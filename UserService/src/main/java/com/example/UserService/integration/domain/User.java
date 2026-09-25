@@ -1,4 +1,4 @@
-package com.example.UserService.model;
+package com.example.UserService.integration.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

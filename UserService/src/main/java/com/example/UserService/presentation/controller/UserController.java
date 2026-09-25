@@ -1,7 +1,7 @@
-package com.example.UserService.controller;
+package com.example.UserService.presentation.controller;
 
-import com.example.UserService.model.User;
-import com.example.UserService.service.UserService;
+import com.example.UserService.integration.domain.User;
+import com.example.UserService.business.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,6 +19,7 @@ public class UserController {
     // Create User
     @PostMapping
     public User createUser(@RequestBody User user) {
+
         return userService.createUser(user);
     }
 
@@ -31,6 +32,7 @@ public class UserController {
     // Get All Users
     @GetMapping
     public List<User> getAllUsers() {
+
         return userService.getAllUsers();
     }
 
@@ -49,6 +51,6 @@ public class UserController {
 
         userService.deleteUser(id);
 
-        return "User deleted successfully  from vaishu vaibhav ";
+        return "User deleted successfully  from vaibhav ";
     }
 }

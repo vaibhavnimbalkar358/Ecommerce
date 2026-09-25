@@ -1,8 +1,8 @@
-package com.example.UserService.service;
+package com.example.UserService.business;
 
 
 
-import com.example.UserService.model.User;
+import com.example.UserService.integration.domain.User;
 
 import java.util.List;
 
