@@ -1,4 +1,4 @@
-package com.example.UserService.business;
+package com.example.UserService.business.service;
 
 
 

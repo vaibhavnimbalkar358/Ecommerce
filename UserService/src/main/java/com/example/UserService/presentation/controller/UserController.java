@@ -1,7 +1,7 @@
 package com.example.UserService.presentation.controller;
 
 import com.example.UserService.integration.domain.User;
-import com.example.UserService.business.UserService;
+import com.example.UserService.business.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
