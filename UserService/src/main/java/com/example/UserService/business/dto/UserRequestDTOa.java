@@ -1,41 +1,23 @@
-package com.example.UserService.integration.domain;
+package com.example.UserService.business.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Entity
-@Table(name = "users")
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
-
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class UserRequestDTOa {
 
     private String firstName;
-
     private String lastName;
-
-    @Column(unique = true, nullable = false)
     private String email;
-
     private String phone;
-
     private String city;
-
     private String state;
-
     private String country;
 
     private Boolean residentialAddressFlag;
     private Boolean currentAddressFlag;
     private Boolean workAddressFlag;
-
 }

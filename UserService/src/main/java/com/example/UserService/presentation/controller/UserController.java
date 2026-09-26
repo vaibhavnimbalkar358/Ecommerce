@@ -1,31 +1,32 @@
 package com.example.UserService.presentation.controller;
 
-import com.example.UserService.integration.domain.User;
+import com.example.UserService.business.dto.UserRequestDTO;
+import com.example.UserService.business.dto.UserRequestDTOa;
 import com.example.UserService.business.service.UserService;
+import com.example.UserService.integration.domain.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
 
-    private final UserService userService;
+    @Autowired
+    private  UserService userService;
 
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }
 
     // Create User
-    @PostMapping
-    public User createUser(@RequestBody User user) {
-
+    @PostMapping("/user")
+    public String createUser(@RequestBody UserRequestDTOa user) {
         return userService.createUser(user);
     }
 
-    // Get User by ID
     @GetMapping("/{id}")
-    public User getUserById(@PathVariable Long id) {
+    public List<UserRequestDTOa> getUserById(@PathVariable Long id) {
+
         return userService.getUserById(id);
     }
 
