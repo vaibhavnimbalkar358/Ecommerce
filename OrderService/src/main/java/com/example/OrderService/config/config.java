@@ -6,4 +6,8 @@ public class config {
     {
         System.out.println("Vaibhav");
     }
+    void m2()
+    {
+        System.out.println("Vaishnavi");
+    }
 }
