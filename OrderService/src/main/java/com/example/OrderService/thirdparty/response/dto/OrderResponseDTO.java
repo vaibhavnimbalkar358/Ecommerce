@@ -1,35 +1,20 @@
-package com.example.OrderService.integration.domain;
+package com.example.OrderService.thirdparty.response.dto;
 
-import jakarta.persistence.*;
-import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Entity
-@Table(name = "orders")
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Order {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class OrderResponseDTO {
     private Long id;
-
     private Long userId;
-
     private String name;
-
     private String phone;
-
     private Long productId;
-
     private Integer quantity;
-
     private BigDecimal price;
-
 }
