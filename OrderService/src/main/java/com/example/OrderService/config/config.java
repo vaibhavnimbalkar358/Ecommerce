@@ -6,4 +6,8 @@ public class config {
     {
         System.out.println("V001");
     }
+    void m2()
+    {
+        System.out.println("V002");
+    }
 }
