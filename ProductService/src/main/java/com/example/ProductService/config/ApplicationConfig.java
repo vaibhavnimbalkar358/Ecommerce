@@ -1,4 +1,4 @@
 package com.example.ProductService.config;
 
-public class config {
+public class ApplicationConfig {
 }
